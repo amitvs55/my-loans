@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --color-bg-primary: #0F1F3D;
+  --color-bg-secondary: #162B50;
+  --color-bg-card: #FFFFFF;
+  --color-accent: #00D2C6;
+  --color-accent-dark: #00B3A8;
+  --color-accent-light: rgba(0, 210, 198, 0.12);
+  --color-overdue: #FF4D4F;
+  --color-overdue-light: rgba(255, 77, 79, 0.12);
+  --color-paid: #52C41A;
+  --color-paid-light: rgba(82, 196, 26, 0.12);
+  --color-warning: #FAAD14;
+  --color-text-primary: #FFFFFF;
+  --color-text-dark: #1A1A2E;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #8892A4;
+  --color-text-on-accent: #FFFFFF;
+  --color-border: #E8ECF1;
+  --color-border-dark: #2A3A5C;
+  --color-input-bg: #F7F8FA;
+
+  /* Typography */
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-fab: 0 4px 16px rgba(0, 210, 198, 0.4);
+
+  /* Layout */
+  --app-max-width: 430px;
+  --bottom-nav-height: 68px;
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}

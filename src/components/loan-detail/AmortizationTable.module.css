@@ -1,0 +1,125 @@
+.card {
+  margin: 0 var(--space-4) var(--space-3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.count {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  background: var(--color-input-bg);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin: 0 calc(-1 * var(--space-5));
+  padding: 0 var(--space-5);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+}
+
+.table th {
+  text-align: right;
+  padding: var(--space-2) var(--space-2);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-bg-card);
+}
+
+.table th:first-child {
+  text-align: center;
+  width: 36px;
+}
+
+.table td {
+  text-align: right;
+  padding: var(--space-2) var(--space-2);
+  color: var(--color-text-dark);
+  font-weight: 500;
+  border-bottom: 1px solid rgba(232, 236, 241, 0.5);
+}
+
+.monthCol {
+  text-align: center !important;
+  color: var(--color-text-muted) !important;
+  font-weight: 400 !important;
+}
+
+.balanceCol {
+  font-weight: 600 !important;
+}
+
+.paidRow {
+  background: var(--color-paid-light);
+}
+
+.paidRow td {
+  color: var(--color-paid) !important;
+}
+
+.showMore {
+  width: 100%;
+  padding: var(--space-3);
+  margin-top: var(--space-3);
+  background: var(--color-input-bg);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.showMore:hover {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 2px solid var(--color-border);
+}
+
+.totalItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.totalItem strong {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}

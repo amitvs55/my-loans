@@ -1,0 +1,231 @@
+.wrapper {
+  padding: 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* Hero Banner */
+.heroBanner {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+}
+
+.heroIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-3);
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+
+.heroSubtitle {
+  font-size: var(--text-sm);
+  opacity: 0.85;
+}
+
+/* Section */
+.section {
+  animation: slideUp var(--transition-base) ease-out both;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Current Plan Grid */
+.planGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.planItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-3);
+  background: var(--color-input-bg);
+  border-radius: var(--radius-sm);
+}
+
+.planLabel {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.planValue {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+/* Sliders */
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.impactBanner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-paid-light);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-paid);
+}
+
+.impactCombined {
+  background: var(--color-accent-light);
+  border-left-color: var(--color-accent);
+  color: var(--color-accent-dark);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.impactSave {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-paid);
+}
+
+.impactTime {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Comparison Table */
+.comparisonTable {
+  overflow-x: auto;
+}
+
+.compRow {
+  display: grid;
+  grid-template-columns: 80px repeat(var(--cols, 4), 1fr);
+  gap: 1px;
+  margin-bottom: 1px;
+}
+
+.compRow:first-child {
+  position: sticky;
+  top: 0;
+}
+
+.compHeader {
+  padding: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-text-muted);
+  background: var(--color-input-bg);
+  border-radius: 4px 4px 0 0;
+}
+
+.compHighlight {
+  color: var(--color-accent-dark);
+  background: var(--color-accent-light);
+}
+
+.compLabel {
+  padding: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.compValue {
+  padding: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-text-dark);
+  background: rgba(247, 248, 250, 0.5);
+  border-radius: 2px;
+}
+
+.savings {
+  color: var(--color-paid) !important;
+  font-weight: 700 !important;
+}
+
+/* Presets */
+.presets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.preset {
+  padding: var(--space-3);
+  background: var(--color-input-bg);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.preset:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.presetHeader {
+  margin-bottom: var(--space-2);
+}
+
+.presetDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.presetLabel {
+  display: block;
+  font-size: 0.625rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.presetValue {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.savingsText {
+  color: var(--color-paid);
+}
+
+.emptyPresets {
+  text-align: center;
+  padding: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}

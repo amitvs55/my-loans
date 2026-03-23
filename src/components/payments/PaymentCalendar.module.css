@@ -1,0 +1,76 @@
+.card {
+  margin: 0 var(--space-4) var(--space-3);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.legend {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+}
+
+.cell {
+  padding: var(--space-1) var(--space-1);
+  border-radius: 4px;
+  text-align: center;
+  transition: transform var(--transition-fast);
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+.cellLabel {
+  font-family: var(--font-heading);
+  font-size: 0.5625rem;
+  font-weight: 500;
+}
+
+.paid {
+  background: var(--color-paid-light);
+  color: var(--color-paid);
+}
+
+.current {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
+}
+
+.past_unpaid, .unpaid {
+  background: var(--color-overdue-light);
+  color: var(--color-overdue);
+}
+
+.upcoming {
+  background: var(--color-input-bg);
+  color: var(--color-text-muted);
+}
