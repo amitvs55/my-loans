@@ -1,10 +1,11 @@
-const CACHE_NAME = 'my-loans-v1';
+const CACHE_NAME = 'my-loans-v2';
+const BASE = '/my-loans/';
 const STATIC_ASSETS = [
-  '/',
-  '/manifest.json',
-  '/icon-192.svg',
-  '/icon-512.svg',
-  '/favicon.svg'
+  BASE,
+  BASE + 'manifest.json',
+  BASE + 'icon-192.svg',
+  BASE + 'icon-512.svg',
+  BASE + 'favicon.svg'
 ];
 
 // Install: pre-cache the app shell
@@ -30,7 +31,6 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
 
   if (request.mode === 'navigate') {
-    // Network-first for navigation requests
     event.respondWith(
       fetch(request)
         .then((response) => {
@@ -38,12 +38,11 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match('/'))
+        .catch(() => caches.match(BASE))
     );
     return;
   }
 
-  // Cache-first for static assets
   event.respondWith(
     caches.match(request).then((cached) => {
       if (cached) return cached;

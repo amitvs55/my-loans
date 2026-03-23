@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/icon-192.svg" />
+    <link rel="icon" type="image/svg+xml" href="/my-loans/favicon.svg" />
+    <link rel="manifest" href="/my-loans/manifest.json" />
+    <link rel="apple-touch-icon" href="/my-loans/icon-192.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#0F1F3D" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -17,7 +17,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
+          navigator.serviceWorker.register('/my-loans/sw.js', { scope: '/my-loans/' }).catch(() => {});
         });
       }
     </script>
